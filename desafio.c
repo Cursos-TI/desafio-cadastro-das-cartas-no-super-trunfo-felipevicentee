@@ -7,6 +7,8 @@ int main() {
      float pib;
      int pontosturisticos;
 
+     printf("novo commit");
+
 
 
     return 0;
