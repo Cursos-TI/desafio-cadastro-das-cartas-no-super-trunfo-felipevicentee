@@ -1,11 +1,15 @@
 #include<stdio.h> 
 int main() {
+     // aqui onde coloquei as váriaveis e os atributos.
+     
      char estadoA01[50], estadoB02[50];
      char cidadeA01[50], cidadeB02[50];
      int populacaoA01, populacaoB02;
      float areaA01, areaB02;
      float pibA01, pibB02;
      int pontosturisticosA01, pontosturisticosB02;
+    
+     // aqui é onde o usuário vai interagir no terminal, tive dificuldade com o fgets então deixei com scanf mesmo. 
 
      printf("Carta 1:\n");
 
@@ -47,7 +51,8 @@ int main() {
      printf("Quantidade de Pontos Turísticos:\n");
      scanf("%d", &pontosturisticosB02);
 
-
+     // aqui, ao final da interação com o terminal, vai sair o resultado das cartas.
+    
      printf("Carta 1:\n Estado: %s - Cidade: %s - População: %d - Área: %f - PIB: %f - Pontos Túristicos: %d\n", estadoA01, cidadeA01, populacaoA01, areaA01, pibA01, pontosturisticosA01);  
      printf("Carta 2:\n Estado: %s - Cidade: %s - População: %d - Área: %f - PIB: %f - Pontos Túristicos: %d\n", estadoB02, cidadeB02, populacaoB02, areaB02, pibB02, pontosturisticosB02);  
    
