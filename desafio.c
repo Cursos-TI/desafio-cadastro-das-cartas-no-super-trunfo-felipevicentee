@@ -9,7 +9,7 @@ int main() {
      float pibA01, pibB02;
      int pontosturisticosA01, pontosturisticosB02;
     
-     // aqui é onde o usuário vai interagir no terminal, tive dificuldade com o fgets então deixei com scanf mesmo. 
+     // aqui é onde o usuário vai interagir no terminal, tive dificuldade com o fgets então deixei com scanf mesmo.
 
      printf("Carta 1:\n");
 
