@@ -1,60 +1,60 @@
-#include<stdio.h> 
+#include<stdio.h>
+
 int main() {
-     // aqui onde coloquei as váriaveis e os atributos.
-     
-     char estadoA01[50], estadoB02[50];
-     char cidadeA01[50], cidadeB02[50];
-     int populacaoA01, populacaoB02;
-     float areaA01, areaB02;
-     float pibA01, pibB02;
-     int pontosturisticosA01, pontosturisticosB02;
-    
-     // aqui é onde o usuário vai interagir no terminal, tive dificuldade com o fgets então deixei com scanf mesmo.
+    // Variáveis
+    char codigocartaA01[50], codigocartaB02[50];
+    char estadoA01[50], estadoB02[50], cidadeA01[50], cidadeB02[50];
+    int populacaoA01, populacaoB02, pontosturisticosA01, pontosturisticosB02;
+    float areaA01, areaB02, pibA01, pibB02;
+    float densidadeA01, densidadeB02, pibPerCapitaA01, pibPerCapitaB02;
 
-     printf("Carta 1:\n");
+    // Interagir com o terminal
+    printf("Qual o Código da carta ?\n");
+    scanf("%s", &codigocartaA01);
+    printf("Qual o nome do Estado ? \n");
+    scanf("%s", &estadoA01);
+    printf("Qual o nome da Cidade ? \n");
+    scanf("%s", &cidadeA01);
+    printf("Qual a População ?\n");
+    scanf("%d", &populacaoA01);
+    printf("Qual a Área da cidade ?\n");
+    scanf("%f", &areaA01);
+    printf("Qual o PIB da cidade ?\n");
+    scanf("%f", &pibA01);
+    printf("Quantidade de Pontos Turísticos:\n");
+    scanf("%d", &pontosturisticosA01);
 
-     printf("Qual o nome do Estado ? \n");
-     scanf("%s", &estadoA01);
+    // Calcular Densidade Populacional e PIB per Capita
+    densidadeA01 = (float) populacaoA01 / areaA01;
+    pibPerCapitaA01 = pibA01 / populacaoA01;
 
-     printf("Qual o nome da Cidade ? \n");
-     scanf("%s", &cidadeA01);
+    printf("Qual o Código da carta ?\n");
+    scanf("%s", &codigocartaB02);
+    printf("Qual o nome do Estado ? \n");
+    scanf("%s", &estadoB02);
+    printf("Qual o nome da Cidade ? \n");
+    scanf("%s", &cidadeB02);
+    printf("Qual a População ?\n");
+    scanf("%d", &populacaoB02);
+    printf("Qual a Área da cidade ?\n");
+    scanf("%f", &areaB02);
+    printf("Qual o PIB da cidade ?\n");
+    scanf("%f", &pibB02);
+    printf("Quantidade de Pontos Turísticos:\n");
+    scanf("%d", &pontosturisticosB02);
 
-     printf("Qual a População ?\n");
-     scanf("%d", &populacaoA01);
+    // Calcular Densidade Populacional e PIB per Capita
+    densidadeB02 = (float) populacaoB02 / areaB02;
+    pibPerCapitaB02 = pibB02 / populacaoB02;
 
-     printf("Qual a Área da cidade ?\n");
-     scanf("%f", &areaA01);
+    // Imprimir resultados
+    printf("Código da Carta: %s Estado: %s - Cidade: %s - População: %d - Área: %f - PIB: %f - Pontos Túristicos: %d\n", codigocartaA01, estadoA01, cidadeA01, populacaoA01, areaA01, pibA01, pontosturisticosA01);
+    printf("Densidade Populacional: %f habitantes/km²\n", densidadeA01);
+    printf("PIB per Capita: %f\n", pibPerCapitaA01);
 
-     printf("Qual o PIB da cidade ?\n");
-     scanf("%f", &pibA01);
-     
-     printf("Quantidade de Pontos Turísticos:\n");
-     scanf("%d", &pontosturisticosA01);
+    printf("Código da Carta: %s Estado: %s - Cidade: %s - População: %d - Área: %f - PIB: %f - Pontos Túristicos: %d\n", codigocartaB02, estadoB02, cidadeB02, populacaoB02, areaB02, pibB02, pontosturisticosB02);
+    printf("Densidade Populacional: %f habitantes/km²\n", densidadeB02);
+    printf("PIB per Capita: %f\n", pibPerCapitaB02);
 
-     printf("Carta 2:\n");
-
-     printf("Qual o nome do Estado ? \n");
-     scanf("%s", &estadoB02);
-
-     printf("Qual o nome da Cidade ? \n");
-     scanf("%s", &cidadeB02);
-
-     printf("Qual a População ?\n");
-     scanf("%d", &populacaoB02);
-
-     printf("Qual a Área da cidade ?\n");
-     scanf("%f", &areaB02);
-
-     printf("Qual o PIB da cidade ?\n");
-     scanf("%f", &pibB02);
-
-     printf("Quantidade de Pontos Turísticos:\n");
-     scanf("%d", &pontosturisticosB02);
-
-     // aqui, ao final da interação com o terminal, vai sair o resultado das cartas.
-    
-     printf("Carta 1:\n Estado: %s - Cidade: %s - População: %d - Área: %f - PIB: %f - Pontos Túristicos: %d\n", estadoA01, cidadeA01, populacaoA01, areaA01, pibA01, pontosturisticosA01);  
-     printf("Carta 2:\n Estado: %s - Cidade: %s - População: %d - Área: %f - PIB: %f - Pontos Túristicos: %d\n", estadoB02, cidadeB02, populacaoB02, areaB02, pibB02, pontosturisticosB02);  
-   
-     return 0;
+    return 0;
 }
