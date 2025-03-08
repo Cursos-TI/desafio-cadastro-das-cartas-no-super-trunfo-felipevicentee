@@ -12,11 +12,11 @@ int main() {
 
     // Entrada de dados para a primeira carta
     printf("Qual o Código da carta ?\n");
-    scanf("%s", codigocartaA01);
+    scanf(" %[^\n]s", codigocartaA01);
     printf("Qual o nome do Estado ? \n");
-    scanf("%s", estadoA01);
+    scanf(" %[^\n]s", estadoA01);
     printf("Qual o nome da Cidade ? \n");
-    scanf("%s", cidadeA01);
+    scanf(" %[^\n]s", cidadeA01);
     printf("Qual a População ?\n");
     scanf("%lu", &populacaoA01);
     printf("Qual a Área da cidade ?\n");
@@ -32,11 +32,11 @@ int main() {
 
     // Entrada de dados para a segunda carta
     printf("Qual o Código da carta ?\n");
-    scanf("%s", codigocartaB02);
+    scanf(" %[^\n]s", codigocartaB02);
     printf("Qual o nome do Estado ? \n");
-    scanf("%s", estadoB02);
+    scanf(" %[^\n]s", estadoB02);
     printf("Qual o nome da Cidade ? \n");
-    scanf("%s", cidadeB02);
+    scanf(" %[^\n]s", cidadeB02);
     printf("Qual a População ?\n");
     scanf("%lu", &populacaoB02);
     printf("Qual a Área da cidade ?\n");
@@ -56,13 +56,13 @@ int main() {
 
     // Imprimir atributos das cartas
     printf("\n=== Dados das Cartas ===\n");
-    printf("Carta 1 - %s - Estado: %s - Cidade: %s\n", codigocartaA01, estadoA01, cidadeA01);
-    printf("População: %lu - Área: %.2f - PIB: %.2f - Pontos Turísticos: %d\n", populacaoA01, areaA01, pibA01, pontosturisticosA01);
-    printf("Densidade Populacional: %.2f - PIB per Capita: %.2f\n", densidadeA01, pibPerCapitaA01);
+    printf("Carta 1 - %s | Estado: %s | Cidade: %s\n", codigocartaA01, estadoA01, cidadeA01);
+    printf("População: %lu | Área: %.2f | PIB: %.2f | Pontos Turísticos: %d\n", populacaoA01, areaA01, pibA01, pontosturisticosA01);
+    printf("Densidade Populacional: %.2f | PIB per Capita: %.2f\n", densidadeA01, pibPerCapitaA01);
 
-    printf("Carta 2 - %s - Estado: %s - Cidade: %s\n", codigocartaB02, estadoB02, cidadeB02);
-    printf("População: %lu - Área: %.2f - PIB: %.2f - Pontos Turísticos: %d\n", populacaoB02, areaB02, pibB02, pontosturisticosB02);
-    printf("Densidade Populacional: %.2f - PIB per Capita: %.2f\n", densidadeB02, pibPerCapitaB02);
+    printf("Carta 2 - %s | Estado: %s | Cidade: %s\n", codigocartaB02, estadoB02, cidadeB02);
+    printf("População: %lu | Área: %.2f | PIB: %.2f | Pontos Turísticos: %d\n", populacaoB02, areaB02, pibB02, pontosturisticosB02);
+    printf("Densidade Populacional: %.2f | PIB per Capita: %.2f\n", densidadeB02, pibPerCapitaB02);
 
     // Comparações entre atributos das cartas
     printf("\n=== Comparação dos Atributos ===\n");
