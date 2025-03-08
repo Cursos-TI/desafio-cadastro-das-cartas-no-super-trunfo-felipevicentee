@@ -51,18 +51,22 @@ int main() {
     pibPerCapitaB02 = pibB02 / populacaoB02;
 
     // Calcular o super poder
-    superpoderA01 = (int) ((float) populacaoA01 + areaA01 + pibA01 + pontosturisticosA01 + pibPerCapitaA01 + (1.0f / densidadeA01));
-    superpoderB02 = (int) ((float) populacaoB02 + areaB02 + pibB02 + pontosturisticosB02 + pibPerCapitaB02 + (1.0f / densidadeB02));
+    superpoderA01 = ((float) populacaoA01 + areaA01 + pibA01 + pontosturisticosA01 + pibPerCapitaA01 + (1.0f / densidadeA01));
+    superpoderB02 = ((float) populacaoB02 + areaB02 + pibB02 + pontosturisticosB02 + pibPerCapitaB02 + (1.0f / densidadeB02));
 
     // Imprimir atributos das cartas
     printf("\n=== Dados das Cartas ===\n");
-    printf("Carta 1 - %s | Estado: %s | Cidade: %s\n", codigocartaA01, estadoA01, cidadeA01);
-    printf("População: %lu | Área: %.2f | PIB: %.2f | Pontos Turísticos: %d\n", populacaoA01, areaA01, pibA01, pontosturisticosA01);
-    printf("Densidade Populacional: %.2f | PIB per Capita: %.2f\n", densidadeA01, pibPerCapitaA01);
-
-    printf("Carta 2 - %s | Estado: %s | Cidade: %s\n", codigocartaB02, estadoB02, cidadeB02);
-    printf("População: %lu | Área: %.2f | PIB: %.2f | Pontos Turísticos: %d\n", populacaoB02, areaB02, pibB02, pontosturisticosB02);
-    printf("Densidade Populacional: %.2f | PIB per Capita: %.2f\n", densidadeB02, pibPerCapitaB02);
+    printf("Carta 1 - %s - Estado: %s - Cidade: %s\n", codigocartaA01, estadoA01, cidadeA01);
+    printf("População: %lu - Área: %.2f - PIB: %.2f - Pontos Turísticos: %d\n", populacaoA01, areaA01, pibA01, pontosturisticosA01);
+    printf("Densidade Populacional: %.2f - PIB per Capita: %.2f\n", densidadeA01, pibPerCapitaA01);
+    
+    printf("Carta 2 - %s - Estado: %s - Cidade: %s\n", codigocartaB02, estadoB02, cidadeB02);
+    printf("População: %lu - Área: %.2f - PIB: %.2f - Pontos Turísticos: %d\n", populacaoB02, areaB02, pibB02, pontosturisticosB02);
+    printf("Densidade Populacional: %.2f - PIB per Capita: %.2f\n", densidadeB02, pibPerCapitaB02);
+    printf("Super Poder Carta 1: %d\n", superpoderA01);
+    printf("Super Poder Carta 2: %d\n", superpoderB02);
+    
+    
 
     // Comparações entre atributos das cartas
     printf("\n=== Comparação dos Atributos ===\n");
