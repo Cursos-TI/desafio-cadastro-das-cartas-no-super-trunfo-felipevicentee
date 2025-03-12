@@ -79,7 +79,7 @@ int main() {
     // Exibir quem venceu o desafio
     printf("\nQual carta venceu o desafio? Carta 1 (1) ou Carta 2 (0): %d\n", superpoderA01 >= superpoderB02);
     
-    if (populacaoA01 >= pontosturisticosB02){
+    if (populacaoA01 >= populacaoB02){
        printf("População da carta 1 é maior do que a população da carta 2\n");
     } else {
         printf("População da carta 1 não é maior que a população da carta 2\n");
