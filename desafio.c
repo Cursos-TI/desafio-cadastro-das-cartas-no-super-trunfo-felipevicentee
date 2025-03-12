@@ -65,9 +65,7 @@ int main() {
     printf("Densidade Populacional: %.2f - PIB per Capita: %.2f\n", densidadeB02, pibPerCapitaB02);
     printf("Super Poder Carta 1: %d\n", superpoderA01);
     printf("Super Poder Carta 2: %d\n", superpoderB02);
-    
-    
-
+        
     // Comparações entre atributos das cartas
     printf("\n=== Comparação dos Atributos ===\n");
     printf("População da carta 1 é maior que a da carta 2? %d\n", populacaoA01 > populacaoB02);
@@ -80,6 +78,12 @@ int main() {
 
     // Exibir quem venceu o desafio
     printf("\nQual carta venceu o desafio? Carta 1 (1) ou Carta 2 (0): %d\n", superpoderA01 >= superpoderB02);
-
+    
+    if (populacaoA01 >= pontosturisticosB02){
+       printf("População da carta 1 é maior do que a população da carta 2\n");
+    } else {
+        printf("População da carta 1 não é maior que a população da carta 2\n");
+    }
+ 
     return 0;
 }
